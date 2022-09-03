@@ -24,7 +24,7 @@ function Login({onLogin}) {
         <section className='auth-page'>
             <div className='auth-page__container'>
                 <h3 className='auth-page__title'>Вход</h3>
-                <form className='auth-page__form' onSubmit={handleSubmit} noValidate>
+                <form className='auth-page__form' onSubmit={handleSubmit}>
                     <input
                     value={email}
                     onChange={handleChangeEmail}

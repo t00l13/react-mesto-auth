@@ -3,7 +3,13 @@ import PopupWithForm from "./PopupWithForm.js";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 import useFormWithValidation from "../utils/hooks/useFormWithValidation.js";
 
-function EditProfilePopup({ isOpen, onClose, onUpdateUser, isRender, isOverlayPopupClose }) {
+function EditProfilePopup({
+  isOpen,
+  onClose,
+  onUpdateUser,
+  isRender,
+  isOverlayPopupClose,
+}) {
   const currentUser = React.useContext(CurrentUserContext);
   const {
     values,

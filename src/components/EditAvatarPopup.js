@@ -2,7 +2,13 @@ import React from "react";
 import PopupWithForm from "./PopupWithForm";
 import useFormWithValidation from "../utils/hooks/useFormWithValidation";
 
-function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, isRender, isOverlayPopupClose }) {
+function EditAvatarPopup({
+  isOpen,
+  onClose,
+  onUpdateAvatar,
+  isRender,
+  isOverlayPopupClose,
+}) {
   const { values, errors, isValid, onChange, resetForm } =
     useFormWithValidation();
 
